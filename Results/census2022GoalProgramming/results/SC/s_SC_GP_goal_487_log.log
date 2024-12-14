@@ -1,0 +1,105 @@
+
+Gurobi 11.0.3 (linux64, Java) logging started sex 22 nov 2024 00:33:47 -03
+
+Set parameter Username
+Academic license - for non-commercial use only - expires 2025-10-10
+Set parameter NonConvex to value 2
+Set parameter TimeLimit to value 3600
+Set parameter LogToConsole to value 0
+Set parameter MIPGap to value 2.8513120942475052e-08
+Set parameter Threads to value 2
+Set parameter NodefileDir to value "/home/ps12398/experiment_hosp/goalProgrammingMarcos/"
+Set parameter NodefileStart to value 1
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (linux64)
+
+CPU model: Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz, instruction set [SSE2]
+Thread count: 12 physical cores, 24 logical processors, using up to 2 threads
+
+Optimize a model with 253880 rows, 172586 columns and 1906376 nonzeros
+Model fingerprint: 0x5c863f78
+Model has 298 quadratic constraints
+Variable types: 86148 continuous, 86438 integer (293 binary)
+Coefficient statistics:
+  Matrix range     [3e-03, 3e+06]
+  QMatrix range    [3e-03, 5e+04]
+  QLMatrix range   [1e+00, 5e+04]
+  Objective range  [1e+00, 7e+07]
+  Bounds range     [1e+00, 1e+08]
+  RHS range        [1e+00, 8e+06]
+  QRHS range       [1e-01, 1e-01]
+Presolve removed 250437 rows and 168877 columns
+Presolve time: 1.87s
+Presolved: 5451 rows, 4324 columns, 766205 nonzeros
+Presolved model has 2 SOS constraint(s)
+Presolved model has 293 bilinear constraint(s)
+
+Solving non-convex MIQCP
+
+Variable types: 1045 continuous, 3279 integer (295 binary)
+Found heuristic solution: objective 2.971277e+07
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.179814e+03   0.000000e+00      7s
+     458    0.0000000e+00   0.000000e+00   0.000000e+00      7s
+
+Root relaxation: objective 0.000000e+00, 458 iterations, 0.24 seconds (0.06 work units)
+Total elapsed time = 6.96s (DegenMoves)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0  415 2.9713e+07    0.00000   100%     -    9s
+H    0     0                    8747385.8268    0.00000   100%     -   10s
+     0     0    0.00000    0  498 8747385.83    0.00000   100%     -   12s
+     0     0    0.00000    0  486 8747385.83    0.00000   100%     -   13s
+     0     0    0.00000    0  308 8747385.83    0.00000   100%     -   16s
+H    0     0                    3301592.3067    0.00000   100%     -   16s
+     0     0    0.00000    0  308 3301592.31    0.00000   100%     -   17s
+     0     0    0.00000    0  306 3301592.31    0.00000   100%     -   17s
+     0     0    0.00000    0  306 3301592.31    0.00000   100%     -   18s
+H    0     0                    2589659.4450    0.00000   100%     -   18s
+     0     0    0.00000    0  308 2589659.44    0.00000   100%     -   19s
+     0     0    0.00000    0  308 2589659.44    0.00000   100%     -   21s
+     0     0    0.00000    0  308 2589659.44    0.00000   100%     -   22s
+     0     0    0.00000    0  308 2589659.44    0.00000   100%     -   28s
+H    0     0                    2382514.3714    0.00000   100%     -   29s
+H    0     0                    2255908.1393    0.00000   100%     -   37s
+     0     2    0.00000    0  308 2255908.14    0.00000   100%     -   40s
+H   33    51                    1681649.8371    0.00000   100%   6.2  123s
+    50   148    0.00000   18  298 1681649.84    0.00000   100%   4.9  133s
+H   61   148                    1001340.4868    0.00000   100%   6.6  133s
+H  147   304                    807274.84778    0.00000   100%   9.3  146s
+   303   421    0.00000   64  292 807274.848    0.00000   100%   7.7  157s
+   420   573    0.00000   89  292 807274.848    0.00000   100%   6.2  170s
+   572   749    0.00000  123  299 807274.848    0.00000   100%   5.1  185s
+   748   909    0.00000  163  292 807274.848    0.00000   100%   4.9  198s
+   908  1046    0.00000  200  292 807274.848    0.00000   100%   6.1  211s
+H 1047  1118                    804673.47199    0.00000   100%   7.0  222s
+  1131  1159    0.00000  264  292 804673.472    0.00000   100%   9.5  234s
+H 1137  1159                    758828.65403    0.00000   100%  11.4  235s
+H 1226  1328                    758828.62198    0.00000   100%  21.8  258s
+H 1413  1416                    538029.47398    0.00000   100%  21.0  280s
+  1580  1538 infeasible  401      538029.474    0.00000   100%  20.2  299s
+  1753  1726    0.00000  526  295 538029.474    0.00000   100%  19.2  311s
+H 1839  1726                    227683.51797    0.00000   100%  18.4  311s
+H 1914  1726                    30272.919902    0.00000   100%  18.1  311s
+  1941  1967    0.00000  637  295 30272.9199    0.00000   100%  18.0  328s
+H 2103  1967                    7371.8233062    0.00000   100%  16.8  329s
+H 2151   360                       0.0000000    0.00000  0.00%  16.7  329s
+
+Cutting planes:
+  Gomory: 10
+  Implied bound: 4
+  MIR: 122
+  StrongCG: 21
+  RLT: 4
+
+Explored 2189 nodes (38059 simplex iterations) in 329.14 seconds (80.69 work units)
+Thread count was 2 (of 24 available processors)
+
+Solution count 10: 0 7371.82 30272.9 ... 1.00134e+06
+
+Optimal solution found (tolerance 2.85e-08)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%

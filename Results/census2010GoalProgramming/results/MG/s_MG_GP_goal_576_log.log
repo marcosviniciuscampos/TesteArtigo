@@ -1,0 +1,116 @@
+
+Gurobi 11.0.3 (linux64, Java) logging started seg 04 nov 2024 20:54:00 -03
+
+Set parameter Username
+Academic license - for non-commercial use only - expires 2025-10-10
+Warning: Gurobi version mismatch between Java 11.0.1 and C library 11.0.3
+Warning: Gurobi version mismatch between Java 11.0.1 and Jni 11.0.3
+Set parameter NonConvex to value 2
+Set parameter TimeLimit to value 3600
+Set parameter LogToConsole to value 0
+Set parameter MIPGap to value 1.0291680367498715e-08
+Set parameter Threads to value 2
+Set parameter NodefileDir to value "/home/ps12398/goal_programming/goalProgrammingMarcos/"
+Set parameter NodefileStart to value 1
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (linux64)
+
+CPU model: Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz, instruction set [SSE2]
+Thread count: 12 physical cores, 24 logical processors, using up to 2 threads
+
+Optimize a model with 2176625 rows, 1457786 columns and 12056581 nonzeros
+Model fingerprint: 0x96ef2d68
+Model has 858 quadratic constraints
+Variable types: 728468 continuous, 729318 integer (853 binary)
+Coefficient statistics:
+  Matrix range     [1e-03, 1e+07]
+  QMatrix range    [1e-03, 2e+05]
+  QLMatrix range   [1e+00, 2e+05]
+  Objective range  [1e+00, 2e+08]
+  Bounds range     [1e+00, 1e+08]
+  RHS range        [1e+00, 2e+07]
+  QRHS range       [6e-02, 6e-02]
+Presolve removed 0 rows and 0 columns (presolve time = 11s) ...
+Presolve removed 1437480 rows and 718638 columns (presolve time = 15s) ...
+Presolve removed 2166441 rows and 1447160 columns (presolve time = 20s) ...
+Presolve removed 2166647 rows and 1447366 columns (presolve time = 26s) ...
+Presolve removed 2166644 rows and 1447364 columns
+Presolve time: 25.56s
+Presolved: 17064 rows, 12567 columns, 6046758 nonzeros
+Presolved model has 2 SOS constraint(s)
+Presolved model has 853 bilinear constraint(s)
+
+Solving non-convex MIQCP
+
+Variable types: 3209 continuous, 9358 integer (855 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.109981e+04   0.000000e+00     85s
+    1090    0.0000000e+00   0.000000e+00   0.000000e+00     86s
+
+Root relaxation: objective 0.000000e+00, 1090 iterations, 2.43 seconds (0.46 work units)
+Total elapsed time = 86.77s (DegenMoves)
+Total elapsed time = 98.69s (DegenMoves)
+Total elapsed time = 106.52s (DegenMoves)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0 1214          -    0.00000      -     -  107s
+     0     0    0.00000    0 1918          -    0.00000      -     -  194s
+     0     0    0.00000    0 1709          -    0.00000      -     -  217s
+     0     0    0.00000    0 1610          -    0.00000      -     -  301s
+     0     0    0.00000    0 1585          -    0.00000      -     -  309s
+     0     0    0.00000    0 1470          -    0.00000      -     -  352s
+     0     0    0.00000    0 1442          -    0.00000      -     -  367s
+     0     0    0.00000    0 1463          -    0.00000      -     -  401s
+     0     0    0.00000    0 1328          -    0.00000      -     -  519s
+H    0     0                    4.719753e+07    0.00000   100%     -  642s
+     0     2    0.00000    0 1249 4.7198e+07    0.00000   100%     -  786s
+     1     4    0.00000    1 1248 4.7198e+07    0.00000   100%  1302  798s
+     3     6    0.00000    2 1222 4.7198e+07    0.00000   100%  1261  804s
+     5     8    0.00000    3 1220 4.7198e+07    0.00000   100%   798  808s
+     9    12    0.00000    5 1219 4.7198e+07    0.00000   100%   503  811s
+    16    20    0.00000    9 1195 4.7198e+07    0.00000   100%   289  815s
+    19    29    0.00000   10 1192 4.7198e+07    0.00000   100%   244  822s
+    28    35    0.00000   12 1181 4.7198e+07    0.00000   100%   184  858s
+    34    79    0.00000   14 1027 4.7198e+07    0.00000   100%   266  913s
+    78   263    0.00000   37  995 4.7198e+07    0.00000   100%   138 1064s
+   262   402    0.00000  161  996 4.7198e+07    0.00000   100%  47.1 1181s
+   401   496    0.00000  242 1002 4.7198e+07    0.00000   100%  33.3 1293s
+   497   533    0.00000  308  993 4.7198e+07    0.00000   100%  38.7 1396s
+   534   642    0.00000  310  992 4.7198e+07    0.00000   100%  43.4 1475s
+   645   684    0.00000  373  978 4.7198e+07    0.00000   100%  46.8 1609s
+   687   773    0.00000  374  976 4.7198e+07    0.00000   100%  51.3 1690s
+   777   826    0.00000  421  944 4.7198e+07    0.00000   100%  62.9 1794s
+   830   895    0.00000  431  953 4.7198e+07    0.00000   100%  70.9 1869s
+   899  1020    0.00000  458  954 4.7198e+07    0.00000   100%  80.0 1942s
+  1025  1061    0.00000  526  903 4.7198e+07    0.00000   100%  88.7 2141s
+  1066  1188    0.00000  527  918 4.7198e+07    0.00000   100%  92.0 2248s
+  1193  1266    0.00000  606  868 4.7198e+07    0.00000   100%   103 2328s
+  1271  1342    0.00000  621  922 4.7198e+07    0.00000   100%   113 2421s
+  1347  1404    0.00000  632  949 4.7198e+07    0.00000   100%   122 2516s
+  1409  1471    0.00000  633  947 4.7198e+07    0.00000   100%   142 2616s
+  1476  1543    0.00000  649  952 4.7198e+07    0.00000   100%   150 2703s
+  1548  1629    0.00000  673  923 4.7198e+07    0.00000   100%   160 2789s
+  1634  1917    0.00000  703  903 4.7198e+07    0.00000   100%   163 3014s
+  1922  2016    0.00000  877  855 4.7198e+07    0.00000   100%   151 3252s
+H 1945  2016                    7494121.5428    0.00000   100%   149 3259s
+H 1948  2016                    7432226.1116    0.00000   100%   149 3259s
+  2021  2031    0.00000  878  853 7432226.11    0.00000   100%   144 3600s
+
+Cutting planes:
+  Gomory: 41
+  Implied bound: 13
+  MIR: 295
+  StrongCG: 9
+  Relax-and-lift: 2
+
+Explored 2036 nodes (312544 simplex iterations) in 3622.30 seconds (1376.67 work units)
+Thread count was 2 (of 24 available processors)
+
+Solution count 3: 7.43223e+06 7.49412e+06 4.71975e+07 
+
+Time limit reached
+Best objective 7.432226111648e+06, best bound 0.000000000000e+00, gap 100.0000%

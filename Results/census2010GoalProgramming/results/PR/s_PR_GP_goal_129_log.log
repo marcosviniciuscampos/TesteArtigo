@@ -1,0 +1,83 @@
+
+Gurobi 11.0.3 (linux64, Java) logging started sáb 02 nov 2024 16:42:26 -03
+
+Set parameter Username
+Academic license - for non-commercial use only - expires 2025-10-10
+Warning: Gurobi version mismatch between Java 11.0.1 and C library 11.0.3
+Warning: Gurobi version mismatch between Java 11.0.1 and Jni 11.0.3
+Set parameter NonConvex to value 2
+Set parameter TimeLimit to value 3600
+Set parameter LogToConsole to value 0
+Set parameter MIPGap to value 1.8970935848319842e-08
+Set parameter Threads to value 2
+Set parameter NodefileDir to value "/home/ps12398/goal_programming/goalProgrammingMarcos/"
+Set parameter NodefileStart to value 1
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (linux64)
+
+CPU model: Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz, instruction set [SSE2]
+Thread count: 12 physical cores, 24 logical processors, using up to 2 threads
+
+Optimize a model with 474212 rows, 319608 columns and 2916478 nonzeros
+Model fingerprint: 0x1bb953b2
+Model has 404 quadratic constraints
+Variable types: 159606 continuous, 160002 integer (399 binary)
+Coefficient statistics:
+  Matrix range     [3e-03, 9e+06]
+  QMatrix range    [3e-03, 2e+05]
+  QLMatrix range   [1e+00, 2e+05]
+  Objective range  [1e+00, 1e+08]
+  Bounds range     [1e+00, 1e+08]
+  RHS range        [1e+00, 2e+06]
+  QRHS range       [2e-01, 2e-01]
+Presolve removed 471665 rows and 316437 columns
+Presolve time: 1.93s
+Presolved: 4635 rows, 3824 columns, 642701 nonzeros
+Presolved model has 2 SOS constraint(s)
+Presolved model has 399 bilinear constraint(s)
+
+Solving non-convex MIQCP
+
+Variable types: 1329 continuous, 2495 integer (401 binary)
+
+Root relaxation: objective 4.177792e+05, 1167 iterations, 0.10 seconds (0.09 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 417779.176    0  552          - 417779.176      -     -    4s
+     0     0 542517.230    0  521          - 542517.230      -     -    4s
+     0     0 729840.210    0  495          - 729840.210      -     -    4s
+     0     0 890701.046    0  546          - 890701.046      -     -    5s
+     0     0 922097.915    0  506          - 922097.915      -     -    5s
+     0     0 963351.828    0  477          - 963351.828      -     -    5s
+     0     0 982525.635    0  461          - 982525.635      -     -    5s
+     0     0 986946.245    0  441          - 986946.245      -     -    5s
+     0     0 987766.700    0  431          - 987766.700      -     -    5s
+     0     0 987766.700    0  433          - 987766.700      -     -    5s
+     0     0 988235.629    0  428          - 988235.629      -     -    5s
+     0     0 988235.629    0  428          - 988235.629      -     -    5s
+     0     0 993526.078    0  428          - 993526.078      -     -    7s
+     0     2 993526.078    0  428          - 993526.078      -     -    7s
+    11    16 1003145.67    6  407          - 1000323.93      -   8.1   13s
+   150   159 1003777.29   40  399          - 1000323.93      -  35.0   15s
+   745   821 1004796.56  186  402          - 1000323.93      -  11.5   20s
+  1748  1726 1060901.08  442  314          - 1000323.93      -  20.4   25s
+  2358  2391 1003777.29  596  399          - 1000323.93      -  48.6   30s
+  3487  3734 1003807.38  868  414          - 1000323.93      -  45.9   35s
+  3773  3737 1004153.17  243  116          - 1000323.93      -  43.1   40s
+H 3780  3554                    1006068.5194 1003777.29  0.23%  43.0   43s
+H 3780  3376                    1003969.2186 1003777.29  0.02%  43.0   43s
+H 3784  3210                    1003777.2937 1003777.29  0.00%  43.3   45s
+
+Cutting planes:
+  Implied bound: 1
+  MIR: 5
+  RLT: 153
+
+Explored 3784 nodes (168392 simplex iterations) in 45.30 seconds (23.76 work units)
+Thread count was 2 (of 24 available processors)
+
+Solution count 3: 1.00378e+06 1.00397e+06 1.00607e+06 
+
+Optimal solution found (tolerance 1.90e-08)
+Best objective 1.003777293726e+06, best bound 1.003777293726e+06, gap 0.0000%

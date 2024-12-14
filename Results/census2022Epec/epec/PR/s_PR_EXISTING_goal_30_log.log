@@ -1,0 +1,59 @@
+
+Gurobi 11.0.3 (linux64, Java) logging started sáb 30 nov 2024 20:14:06 -03
+
+Set parameter Username
+Academic license - for non-commercial use only - expires 2025-10-10
+Set parameter NonConvex to value 2
+Set parameter TimeLimit to value 3600
+Set parameter LogToConsole to value 0
+Set parameter MIPGap to value 1.8644701200280312e-08
+Set parameter Threads to value 2
+Set parameter NodefileDir to value "/home/ps12398/experiment_epec/goalProgrammingMarcos/"
+Set parameter NodefileStart to value 1
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (linux64)
+
+CPU model: Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz, instruction set [SSE2]
+Thread count: 12 physical cores, 24 logical processors, using up to 2 threads
+
+Optimize a model with 474493 rows, 319608 columns and 2916759 nonzeros
+Model fingerprint: 0x41021bab
+Model has 404 quadratic constraints
+Variable types: 159606 continuous, 160002 integer (399 binary)
+Coefficient statistics:
+  Matrix range     [3e-03, 8e+06]
+  QMatrix range    [3e-03, 2e+05]
+  QLMatrix range   [1e+00, 2e+05]
+  Objective range  [1e+00, 1e+08]
+  Bounds range     [1e+00, 1e+08]
+  RHS range        [1e+00, 6e+06]
+  QRHS range       [2e-01, 2e-01]
+Presolve removed 473131 rows and 317308 columns
+Presolve time: 1.47s
+Presolved: 2785 rows, 2753 columns, 286015 nonzeros
+Presolved model has 2 SOS constraint(s)
+Presolved model has 399 bilinear constraint(s)
+
+Solving non-convex MIQCP
+
+Variable types: 1256 continuous, 1497 integer (401 binary)
+Found heuristic solution: objective 2.252627e+07
+
+Root relaxation: objective 1.048312e+07, 352 iterations, 0.11 seconds (0.06 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 1.0483e+07    0  399 2.2526e+07 1.0483e+07  53.5%     -    2s
+H    0     0                    1.048312e+07 1.0483e+07  0.00%     -    2s
+     0     0 1.0483e+07    0  399 1.0483e+07 1.0483e+07  0.00%     -    2s
+
+Explored 1 nodes (352 simplex iterations) in 3.57 seconds (2.39 work units)
+Thread count was 2 (of 24 available processors)
+
+Solution count 2: 1.04831e+07 2.25263e+07 
+
+Optimal solution found (tolerance 1.86e-08)
+Warning: max constraint violation (2.0447e+00) exceeds tolerance
+Warning: max bound violation (2.3012e-06) exceeds tolerance
+         (possibly due to large matrix coefficient range)
+Best objective 1.048312121954e+07, best bound 1.048312121954e+07, gap 0.0000%

@@ -1,0 +1,120 @@
+
+Gurobi 11.0.3 (linux64, Java) logging started ter 05 nov 2024 10:12:53 -03
+
+Set parameter Username
+Academic license - for non-commercial use only - expires 2025-10-10
+Warning: Gurobi version mismatch between Java 11.0.1 and C library 11.0.3
+Warning: Gurobi version mismatch between Java 11.0.1 and Jni 11.0.3
+Set parameter NonConvex to value 2
+Set parameter TimeLimit to value 3600
+Set parameter LogToConsole to value 0
+Set parameter MIPGap to value 1.0291680367498715e-08
+Set parameter Threads to value 2
+Set parameter NodefileDir to value "/home/ps12398/goal_programming/goalProgrammingMarcos/"
+Set parameter NodefileStart to value 1
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (linux64)
+
+CPU model: Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz, instruction set [SSE2]
+Thread count: 12 physical cores, 24 logical processors, using up to 2 threads
+
+Optimize a model with 2176625 rows, 1457786 columns and 12056581 nonzeros
+Model fingerprint: 0xa07d469c
+Model has 858 quadratic constraints
+Variable types: 728468 continuous, 729318 integer (853 binary)
+Coefficient statistics:
+  Matrix range     [1e-03, 1e+07]
+  QMatrix range    [1e-03, 2e+05]
+  QLMatrix range   [1e+00, 2e+05]
+  Objective range  [1e+00, 2e+08]
+  Bounds range     [1e+00, 1e+08]
+  RHS range        [1e+00, 1e+06]
+  QRHS range       [1e-01, 1e-01]
+Presolve removed 0 rows and 0 columns (presolve time = 7s) ...
+Presolve removed 1 rows and 1 columns (presolve time = 11s) ...
+Presolve removed 1437488 rows and 718638 columns (presolve time = 17s) ...
+Presolve removed 1445608 rows and 726758 columns (presolve time = 21s) ...
+Presolve removed 2166647 rows and 1447366 columns (presolve time = 26s) ...
+Presolve removed 2166644 rows and 1447364 columns
+Presolve time: 29.37s
+Presolved: 17064 rows, 12567 columns, 6046758 nonzeros
+Presolved model has 2 SOS constraint(s)
+Presolved model has 853 bilinear constraint(s)
+
+Solving non-convex MIQCP
+
+Variable types: 3209 continuous, 9358 integer (855 binary)
+Found heuristic solution: objective 7.204427e+07
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.009906e+04   0.000000e+00     90s
+     784    0.0000000e+00   0.000000e+00   0.000000e+00     91s
+
+Root relaxation: objective 0.000000e+00, 784 iterations, 2.22 seconds (0.29 work units)
+Total elapsed time = 91.79s (DegenMoves)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0 1156 7.2044e+07    0.00000   100%     -   92s
+     0     0    0.00000    0 1514 7.2044e+07    0.00000   100%     -  127s
+     0     0    0.00000    0 1257 7.2044e+07    0.00000   100%     -  207s
+     0     0    0.00000    0 1259 7.2044e+07    0.00000   100%     -  213s
+     0     0    0.00000    0 1254 7.2044e+07    0.00000   100%     -  259s
+     0     0    0.00000    0 1587 7.2044e+07    0.00000   100%     -  295s
+     0     0    0.00000    0 1322 7.2044e+07    0.00000   100%     -  313s
+     0     0    0.00000    0 1805 7.2044e+07    0.00000   100%     -  351s
+     0     0    0.00000    0 1345 7.2044e+07    0.00000   100%     -  381s
+     0     0    0.00000    0 1345 7.2044e+07    0.00000   100%     -  413s
+     0     2    0.00000    0  995 7.2044e+07    0.00000   100%     -  515s
+     1     4    0.00000    1  989 7.2044e+07    0.00000   100%   199  520s
+     3     6    0.00000    2 1582 7.2044e+07    0.00000   100%   524  560s
+     5     8    0.00000    2 1580 7.2044e+07    0.00000   100%   831  589s
+     7    10    0.00000    3 1578 7.2044e+07    0.00000   100%   782  593s
+     9    12    0.00000    4 1574 7.2044e+07    0.00000   100%   610  596s
+    13    16    0.00000    6 1576 7.2044e+07    0.00000   100%   425  603s
+    15    24    0.00000    7 1572 7.2044e+07    0.00000   100%   371  617s
+    23    34    0.00000   10 1563 7.2044e+07    0.00000   100%   257  646s
+    33    70    0.00000   12 1553 7.2044e+07    0.00000   100%   181  720s
+    69   119    0.00000   22 1525 7.2044e+07    0.00000   100%  89.8  849s
+H   90   119                    7.186140e+07    0.00000   100%  77.8  850s
+   118   224    0.00000   35 1329 7.1861e+07    0.00000   100%  66.3 1070s
+   223   392    0.00000  104 1223 7.1861e+07    0.00000   100%  56.7 1285s
+   391   537    0.00000  180 1279 7.1861e+07    0.00000   100%  43.2 1434s
+   536   625    0.00000  230 1257 7.1861e+07    0.00000   100%  47.6 1540s
+H  624   737                    7.129681e+07    0.00000   100%  59.3 1635s
+   736   807    0.00000  311 1157 7.1297e+07    0.00000   100%  69.3 1768s
+   806   855    0.00000  348 1221 7.1297e+07    0.00000   100%  93.2 1864s
+   854   955    0.00000  368 1279 7.1297e+07    0.00000   100%   108 2020s
+   954  1129 11005.5070  414 1289 7.1297e+07    0.00000   100%   114 2233s
+H 1102  1129                    6.417228e+07    0.00000   100%   102 2233s
+H 1127  1129                    1.291656e+07    0.00000   100%   101 2233s
+H 1128  1221                    1.274363e+07    0.00000   100%   101 2347s
+H 1220  1300                    1.144913e+07    0.00000   100%   103 2497s
+H 1299  1375                    1.070658e+07    0.00000   100%   114 2616s
+H 1374  1430                    9606355.8989    0.00000   100%   127 2748s
+H 1404  1430                    9488844.1911    0.00000   100%   132 2748s
+  1429  1565 498185.638  557 1130 9488844.19    0.00000   100%   137 2927s
+H 1430  1565                    9436963.4390    0.00000   100%   137 2930s
+  1564  1706 733360.040  578 1216 9436963.44    0.00000   100%   138 3108s
+H 1597  1706                    9433190.0442    0.00000   100%   143 3122s
+  1705  1855 902931.974  596 1171 9433190.04    0.00000   100%   138 3348s
+H 1756  1855                    9093155.0835    0.00000   100%   141 3349s
+  1854  2099 1177623.54  623 1181 9093155.08    0.00000   100%   137 3600s
+H 1976  2099                    8935066.7853    0.00000   100%   132 3600s
+
+Cutting planes:
+  Gomory: 6
+  Implied bound: 8
+  MIR: 268
+  StrongCG: 1
+  Relax-and-lift: 4
+
+Explored 2098 nodes (281401 simplex iterations) in 3651.97 seconds (1708.21 work units)
+Thread count was 2 (of 24 available processors)
+
+Solution count 10: 8.93507e+06 9.09316e+06 9.43319e+06 ... 1.29166e+07
+
+Time limit reached
+Best objective 8.935066785349e+06, best bound 0.000000000000e+00, gap 100.0000%

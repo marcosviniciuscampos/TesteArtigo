@@ -1,0 +1,89 @@
+
+Gurobi 11.0.3 (linux64, Java) logging started seg 04 nov 2024 14:50:35 -03
+
+Set parameter Username
+Academic license - for non-commercial use only - expires 2025-10-10
+Warning: Gurobi version mismatch between Java 11.0.1 and C library 11.0.3
+Warning: Gurobi version mismatch between Java 11.0.1 and Jni 11.0.3
+Set parameter NonConvex to value 2
+Set parameter TimeLimit to value 3600
+Set parameter LogToConsole to value 0
+Set parameter MIPGap to value 3.0591967898393180e-08
+Set parameter Threads to value 2
+Set parameter NodefileDir to value "/home/ps12398/goal_programming/goalProgrammingMarcos/"
+Set parameter NodefileStart to value 1
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (linux64)
+
+CPU model: Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz, instruction set [SSE2]
+Thread count: 12 physical cores, 24 logical processors, using up to 2 threads
+
+Optimize a model with 253822 rows, 172586 columns and 1906318 nonzeros
+Model fingerprint: 0x3ccbc9c1
+Model has 298 quadratic constraints
+Variable types: 86148 continuous, 86438 integer (293 binary)
+Coefficient statistics:
+  Matrix range     [3e-03, 3e+06]
+  QMatrix range    [3e-03, 5e+04]
+  QLMatrix range   [1e+00, 5e+04]
+  Objective range  [1e+00, 7e+07]
+  Bounds range     [1e+00, 1e+08]
+  RHS range        [1e+00, 5e+05]
+  QRHS range       [2e-01, 2e-01]
+Presolve removed 249306 rows and 167920 columns
+Presolve time: 1.75s
+Presolved: 6930 rows, 5397 columns, 1055422 nonzeros
+Presolved model has 2 SOS constraint(s)
+Presolved model has 293 bilinear constraint(s)
+
+Solving non-convex MIQCP
+
+Variable types: 1103 continuous, 4294 integer (295 binary)
+Found heuristic solution: objective 3.125223e+07
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.575538e+03   0.000000e+00      7s
+     477    0.0000000e+00   0.000000e+00   0.000000e+00      7s
+
+Root relaxation: objective 0.000000e+00, 477 iterations, 0.26 seconds (0.07 work units)
+Total elapsed time = 7.52s (DegenMoves)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0  500 3.1252e+07    0.00000   100%     -    9s
+     0     0 398632.280    0  365 3.1252e+07 398632.280  98.7%     -   11s
+     0     0 461765.741    0  359 3.1252e+07 461765.741  98.5%     -   12s
+     0     0 687674.705    0  357 3.1252e+07 687674.705  97.8%     -   13s
+H    0     0                    3.123891e+07 687869.023  97.8%     -   13s
+     0     0 750150.125    0  326 3.1239e+07 750150.125  97.6%     -   13s
+     0     0 764677.342    0  317 3.1239e+07 764677.342  97.6%     -   14s
+     0     0 764913.404    0  317 3.1239e+07 764913.404  97.6%     -   15s
+     0     0 764913.404    0  316 3.1239e+07 764913.404  97.6%     -   15s
+     0     0 768279.107    0  316 3.1239e+07 768279.107  97.5%     -   16s
+     0     0 768279.107    0  316 3.1239e+07 768279.107  97.5%     -   17s
+     0     0 768279.107    0  316 3.1239e+07 768279.107  97.5%     -   17s
+     0     0 768279.107    0  316 3.1239e+07 768279.107  97.5%     -   20s
+H    0     0                    856146.99183 768279.107  10.3%     -   27s
+     0     2 768279.107    0  316 856146.992 768279.107  10.3%     -   28s
+     7    10 769775.365    4  312 856146.992 769775.365  10.1%   7.3   30s
+    15    18 776497.548    8  293 856146.992 775195.013  9.46%   6.9  147s
+H   29    27                    776497.54847 775195.013  0.17%  16.6  150s
+H   65     7                    775238.78576 775238.786  0.00%   8.5  153s
+
+Cutting planes:
+  Gomory: 10
+  Implied bound: 6
+  MIR: 247
+  StrongCG: 21
+  RLT: 3
+  Relax-and-lift: 1
+
+Explored 66 nodes (2280 simplex iterations) in 153.66 seconds (39.58 work units)
+Thread count was 2 (of 24 available processors)
+
+Solution count 5: 775239 776498 856147 ... 3.12522e+07
+
+Optimal solution found (tolerance 3.06e-08)
+Best objective 7.752387857575e+05, best bound 7.752387857575e+05, gap 0.0000%

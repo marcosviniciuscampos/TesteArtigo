@@ -1,0 +1,110 @@
+
+Gurobi 11.0.3 (linux64, Java) logging started seg 04 nov 2024 22:47:35 -03
+
+Set parameter Username
+Academic license - for non-commercial use only - expires 2025-10-10
+Warning: Gurobi version mismatch between Java 11.0.1 and C library 11.0.3
+Warning: Gurobi version mismatch between Java 11.0.1 and Jni 11.0.3
+Set parameter NonConvex to value 2
+Set parameter TimeLimit to value 3600
+Set parameter LogToConsole to value 0
+Set parameter MIPGap to value 1.0291680367498715e-08
+Set parameter Threads to value 2
+Set parameter NodefileDir to value "/home/ps12398/goal_programming/goalProgrammingMarcos/"
+Set parameter NodefileStart to value 1
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (linux64)
+
+CPU model: Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz, instruction set [SSE2]
+Thread count: 12 physical cores, 24 logical processors, using up to 2 threads
+
+Optimize a model with 2176625 rows, 1457786 columns and 12056581 nonzeros
+Model fingerprint: 0x880f60b2
+Model has 858 quadratic constraints
+Variable types: 728468 continuous, 729318 integer (853 binary)
+Coefficient statistics:
+  Matrix range     [1e-03, 1e+07]
+  QMatrix range    [1e-03, 2e+05]
+  QLMatrix range   [1e+00, 2e+05]
+  Objective range  [1e+00, 2e+08]
+  Bounds range     [1e+00, 1e+08]
+  RHS range        [1e+00, 2e+07]
+  QRHS range       [4e-02, 4e-02]
+Presolve removed 1 rows and 2 columns (presolve time = 5s) ...
+Presolve removed 1445608 rows and 726758 columns (presolve time = 10s) ...
+Presolve removed 2166647 rows and 1447366 columns (presolve time = 16s) ...
+Presolve removed 2166644 rows and 1447364 columns
+Presolve time: 17.89s
+Presolved: 17064 rows, 12567 columns, 6046758 nonzeros
+Presolved model has 2 SOS constraint(s)
+Presolved model has 853 bilinear constraint(s)
+
+Solving non-convex MIQCP
+
+Variable types: 3209 continuous, 9358 integer (855 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.109979e+04   0.000000e+00     70s
+    1116    0.0000000e+00   0.000000e+00   0.000000e+00     72s
+
+Root relaxation: objective 0.000000e+00, 1116 iterations, 2.46 seconds (0.67 work units)
+Total elapsed time = 72.78s (DegenMoves)
+Total elapsed time = 83.82s (DegenMoves)
+Total elapsed time = 90.94s (DegenMoves)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0 1218          -    0.00000      -     -   91s
+     0     0    0.00000    0 2036          -    0.00000      -     -  131s
+     0     0    0.00000    0 1728          -    0.00000      -     -  171s
+     0     0    0.00000    0 1605          -    0.00000      -     -  246s
+     0     0    0.00000    0 1476          -    0.00000      -     -  263s
+     0     0    0.00000    0 1507          -    0.00000      -     -  294s
+     0     0    0.00000    0 1539          -    0.00000      -     -  307s
+     0     0    0.00000    0 1478          -    0.00000      -     -  348s
+     0     0    0.00000    0 1529          -    0.00000      -     -  359s
+     0     0    0.00000    0 1527          -    0.00000      -     -  389s
+     0     0    0.00000    0 1450          -    0.00000      -     -  486s
+H    0     0                    4.250971e+07    0.00000   100%     -  611s
+H    0     0                    3.864757e+07    0.00000   100%     -  736s
+     0     2    0.00000    0 1450 3.8648e+07    0.00000   100%     -  794s
+     1     4    0.00000    1 1446 3.8648e+07    0.00000   100%  2040  797s
+     3     6    0.00000    2 1506 3.8648e+07    0.00000   100%  1048  824s
+     5     8    0.00000    2 1470 3.8648e+07    0.00000   100%  1132  841s
+     7    10    0.00000    3 1485 3.8648e+07    0.00000   100%  1012  868s
+     9    12    0.00000    4 1482 3.8648e+07    0.00000   100%   982  871s
+    14    19    0.00000    5 1482 3.8648e+07    0.00000   100%   642  877s
+    18    29    0.00000    7 1478 3.8648e+07    0.00000   100%   501  894s
+    28    43    0.00000    9 1489 3.8648e+07    0.00000   100%   360 1050s
+    43    88    0.00000   12 1800 3.8648e+07    0.00000   100%   597 1165s
+    88   411    0.00000   25 1697 3.8648e+07    0.00000   100%   417 1564s
+   411   498    0.00000  149 1519 3.8648e+07    0.00000   100%   150 1722s
+   498   639    0.00000  186 1638 3.8648e+07    0.00000   100%   153 1897s
+   639   825    0.00000  226 1292 3.8648e+07    0.00000   100%   148 2074s
+   826  1049    0.00000  290 1199 3.8648e+07    0.00000   100%   135 2245s
+H 1050  1247                    3.843049e+07    0.00000   100%   126 2389s
+H 1248  1432                    3.833513e+07    0.00000   100%   122 2556s
+  1433  1615    0.00000  480 1020 3.8335e+07    0.00000   100%   118 2765s
+H 1578  1615                    3.810686e+07    0.00000   100%   110 2765s
+H 1604  1615                    1.421844e+07    0.00000   100%   109 2765s
+H 1607  1615                    1.365295e+07    0.00000   100%   108 2765s
+  1617  1875    0.00000  581  927 1.3653e+07    0.00000   100%   108 3600s
+H 1750  1875                    6405234.5770    0.00000   100%   100 3600s
+
+Cutting planes:
+  Gomory: 55
+  Implied bound: 19
+  MIR: 313
+  StrongCG: 7
+  Mod-K: 1
+  Relax-and-lift: 2
+
+Explored 1877 nodes (199362 simplex iterations) in 3630.02 seconds (1775.05 work units)
+Thread count was 2 (of 24 available processors)
+
+Solution count 8: 6.40523e+06 1.36529e+07 1.42184e+07 ... 4.25097e+07
+
+Time limit reached
+Best objective 6.405234576984e+06, best bound 0.000000000000e+00, gap 100.0000%

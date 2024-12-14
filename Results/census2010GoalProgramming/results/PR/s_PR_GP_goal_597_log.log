@@ -1,0 +1,90 @@
+
+Gurobi 11.0.3 (linux64, Java) logging started dom 03 nov 2024 15:50:32 -03
+
+Set parameter Username
+Academic license - for non-commercial use only - expires 2025-10-10
+Warning: Gurobi version mismatch between Java 11.0.1 and C library 11.0.3
+Warning: Gurobi version mismatch between Java 11.0.1 and Jni 11.0.3
+Set parameter NonConvex to value 2
+Set parameter TimeLimit to value 3600
+Set parameter LogToConsole to value 0
+Set parameter MIPGap to value 1.8970935848319842e-08
+Set parameter Threads to value 2
+Set parameter NodefileDir to value "/home/ps12398/goal_programming/goalProgrammingMarcos/"
+Set parameter NodefileStart to value 1
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (linux64)
+
+CPU model: Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz, instruction set [SSE2]
+Thread count: 12 physical cores, 24 logical processors, using up to 2 threads
+
+Optimize a model with 474212 rows, 319608 columns and 2916478 nonzeros
+Model fingerprint: 0x1b90ffee
+Model has 404 quadratic constraints
+Variable types: 159606 continuous, 160002 integer (399 binary)
+Coefficient statistics:
+  Matrix range     [3e-03, 9e+06]
+  QMatrix range    [3e-03, 2e+05]
+  QLMatrix range   [1e+00, 2e+05]
+  Objective range  [1e+00, 1e+08]
+  Bounds range     [1e+00, 1e+08]
+  RHS range        [1e+00, 1e+07]
+  QRHS range       [9e-02, 9e-02]
+Presolve removed 471665 rows and 316437 columns
+Presolve time: 2.25s
+Presolved: 4635 rows, 3824 columns, 642701 nonzeros
+Presolved model has 2 SOS constraint(s)
+Presolved model has 399 bilinear constraint(s)
+
+Solving non-convex MIQCP
+
+Variable types: 1329 continuous, 2495 integer (401 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   6.148776e+03   0.000000e+00      6s
+     542    0.0000000e+00   0.000000e+00   0.000000e+00      6s
+
+Root relaxation: objective 0.000000e+00, 542 iterations, 0.08 seconds (0.04 work units)
+Total elapsed time = 6.00s (DegenMoves)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0  525          -    0.00000      -     -    6s
+     0     0    0.00000    0  485          -    0.00000      -     -    6s
+     0     0    0.00000    0  486          -    0.00000      -     -    6s
+     0     0    0.00000    0  729          -    0.00000      -     -    7s
+     0     0    0.00000    0  711          -    0.00000      -     -    7s
+     0     0    0.00000    0  632          -    0.00000      -     -    7s
+     0     0    0.00000    0  626          -    0.00000      -     -    9s
+     0     2    0.00000    0  619          -    0.00000      -     -   11s
+    88   203    0.00000   29  568          -    0.00000      -  91.7   17s
+   441   709    0.00000   84  442          -    0.00000      -  58.1   20s
+  1626  1990    0.00000  483  275          -    0.00000      -  38.5   25s
+  3218  3589    0.00000 1202  175          -    0.00000      -  21.7   30s
+  4008  3987    0.00000  739  233          -    0.00000      -  18.0   36s
+  4011  3989    0.00000  477  281          -    0.00000      -  18.0   41s
+  4021  3996    0.00000  416   88          -    0.00000      -  18.0   45s
+  4052  4020    0.00000   20  437          -    0.00000      -  21.9   50s
+  4515  4474    0.00000  165  302          -    0.00000      -  23.5   55s
+  5551  5315    0.00000  394  401          -    0.00000      -  22.6   61s
+  6611  5630    0.00000  728  263          -    0.00000      -  20.3   66s
+  7603  6389    0.00000 1025  273          -    0.00000      -  19.2   70s
+* 8682  2684            1004       0.0000000    0.00000  0.00%  17.6   73s
+
+Cutting planes:
+  Gomory: 3
+  Implied bound: 3
+  MIR: 128
+  StrongCG: 4
+  Flow cover: 53
+  RLT: 31
+
+Explored 8843 nodes (159340 simplex iterations) in 73.63 seconds (33.89 work units)
+Thread count was 2 (of 24 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.90e-08)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
